@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    --main-background-color: #E1B7BF;
+    --accent-color: #C262AF;
+    --dark-color: #59437A;
+    --light-color: #D4C7E8;
+    --gray-color: #333333;
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    background-color: var(--main-background-color);
+    display: grid;
+    grid-template-rows: repeat(10, auto-fit);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 88px;
+    margin: 0 100px;
+}
+
+header .menu a i{
+    font-size: 1.75em;
+    color: var(--accent-color);
+}
+
+.man-info{
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 100px;
+    height: 634px;
+}
+
+.man-info-el{
+    width: calc(100%/2);
+    margin: 44px 0 0 0;
+}
+
+.man-info .man{
+    height: 634px;
+    text-align: center;
+}
+
+.man-info .man img{
+    height: 590px;
+}
+
+.man-info .info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto 0;
+}
+
+.man-info .info hr{
+    background-color: var(--dark-color);
+    height: 0.35em;
+    width: 111px;
+    margin: 0;
+}
+
+.man-info .info .prof{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-color);
+    width: 515px;
+    margin: 20px 0 0 0;
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.man-info .info .prof p{
+    margin: 0;
+}
+
+.man-info .info button{
+    width: 298px;
+    height: 58px;
+    margin: 33px 0 0 0;
+    text-transform: uppercase;
+    border-radius: 8px;
+    border-color: var(--accent-color);
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: bold;
+    background-color: var(--accent-color);
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.man-info .info button:hover{
+    background-color: var(--dark-color);
+    border-color: var(--dark-color);
+}
+
+.man-info .info button:focus{
+    background-color: var(--dark-color);
+    border-color: var(--dark-color);
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--dark-color);
+    padding: 0 100px;
+}
+
+.skill{
+    height: 474px;
+    width: 1fr;
+    padding: 26px;
+}
+
+.skill h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--light-color);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.skill h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
+
+.skill p{
+    color: var(--light-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+.skill button{
+    width: 236px;
+    height: 50px;
+    margin: 20px 0 0 0;
+    color: white;
+    background-color: var(--accent-color);
+    font-size: 18px;
+    border-radius: 8px;
+    border-color: var(--accent-color);
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.skill button:hover{
+    background-color: white;
+    color: var(--accent-color);
+    border-color: white;
+}
+
+.skill button:focus{
+    background-color: white;
+    color: var(--accent-color);
+    border-color: white;
+}
+
+.skill ul{
+    list-style-type: circle;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: var(--light-color);
+    margin: 30px;
+}
+
+footer{
+    height: 426px;
+    padding: 0 100px;
+    background-color: var(--gray-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.feedback{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 100px 0;
+}
+
+.feedback h2{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.feedback .email-getter{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 0 0;
+}
+
+.feedback .email-getter input{
+    color: var(--light-color);
+    background-color: var(--gray-color);
+    width: 400px;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+}
+
+.feedback .email-getter a{
+    font-size: 30px;
+}
+
+.feedback hr{
+    background-color: var(--light-color);
+    height: 3px;
+    width: 100%;
+    margin: 4px 0 0 0;
+}
+
+.footer-line{
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    color: var(--light-color);
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer-line ul{
+    list-style: none;
+}
+
+.footer-line ul li{
+    margin: 15px 0;
+}
+
+.footer-line ul li.excel-li{
+    color: white;
+}
+
+.soc-line{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 576px) {
+    .container{
+        grid-template-rows: repeat(11, auto-fit);
+    }
+    .man-info{
+        height: calc(897px);
+        flex-direction: column;
+        margin-top: 50px;
+        margin-left: 40px;
+    }
+    .man-info .info{
+        order: -1;
+    }
+
+    .man-info .info .prof{
+        font-size: 60px;
+    }
+
+    .skills{
+        grid-template-columns: 100%;
+        grid-template-rows: 400 repeat(2, 300);
+        padding: 0 40px;
+        height: 1000px;
+        padding-left: 40px;
+    }
+    
+    .skill{
+        height: 300px;
+        padding: 0;
+    }
+
+    .skill ul{
+        margin: 40px 0 0 0;
+    }
+
+    footer{
+        height: 1000px;
+        padding: 0 40px;
+        background-color: var(--gray-color);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .feedback h2{
+        font-size: 25px;
+    }
+    
+    .feedback .email-getter input{
+        width: 350px;
+    }
+    
+    .feedback .email-getter a{
+        font-size: 25px;
+    }
+    
+    .feedback hr{
+        background-color: var(--light-color);
+        height: 3px;
+        width: 100%;
+        margin: 4px 0 0 0;
+    }
+    
+    .footer-line{
+        flex-direction: column;
+    }
+
+    .footer-line ul{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .footer-line ul li{
+        margin: 10px 0;
+    }
+    
+    .footer-line ul li.excel-li{
+        color: white;
+    }
+    
+    .soc-line{
+        font-size: 30px;
+        width: 450px;
+    }
+}
